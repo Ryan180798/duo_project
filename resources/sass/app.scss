@@ -1,1 +1,20 @@
-//
+
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+@import "./~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "./~@fortawesome/fontawesome-free/scss/solid.scss";
+@import "./~@fortawesome/fontawesome-free/scss/brands.scss";
+
+@import "~magnific-popup";
+
+// Variables
+@import 'variables';
+
+@import '~animate.css';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+@import './style.scss';
