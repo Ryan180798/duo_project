@@ -12,12 +12,17 @@
       </div>
 
       <div class="row">
+       @foreach ($services as $service)
         <div class="col-md-4 service-item">
-          <div class="service-icon"><i class="fa fa-desktop"></i></div>
-          <h4 class="service-title"><a href="">Lorem Ipsum</a></h4>
-          <p class="service-description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+          <div class="service-icon"><i class="{{$service->icon_path}}"></i></div>
+          <h4 class="service-title"><a href="">{{$service->title}}</a></h4>
+          <p class="service-description">{{$service->description}}</p>
         </div>
-        <div class="col-md-4 service-item">
+       @endforeach
+
+
+
+        {{-- <div class="col-md-4 service-item">
           <div class="service-icon"><i class="fas fa-chart-bar"></i></div>
           <h4 class="service-title"><a href="">Dolor Sitema</a></h4>
           <p class="service-description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
@@ -41,7 +46,7 @@
           <div class="service-icon"><i class="fa fa-shopping-bag"></i></div>
           <h4 class="service-title"><a href="">Eiusmod Tempor</a></h4>
           <p class="service-description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
-        </div>
+        </div> --}}
       </div>
     </div>
   </section>

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Services;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,9 +15,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
-});
+
+    $services=Services::all();
+
+    return view('index',compact('services'));
+})->name('index');
+
 
 Route::get('/admin', function () {
     return view('admin.index');
 })->name('admin');
+
+Route::resource('/admin/services','ServicesController');
