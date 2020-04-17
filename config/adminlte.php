@@ -212,6 +212,11 @@ return [
             'text'=>'Section Services',
             'url'=>'/admin/services',
         ],
+
+        [
+            'text'=>'Voir les messages',
+            'url'=>'/admin/contact',
+        ],
     ],
 
     /*

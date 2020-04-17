@@ -4,6 +4,7 @@
   <header id="header">
     <div class="container">
 
+      <div id="preloader"></div>
       <div id="logo" class="pull-left">
         <a href="#hero"><img src="img/logo.png" alt="" title="" /></img></a>
         <!-- Uncomment below if you prefer to use a text image -->

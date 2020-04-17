@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Services;
+use App\Contact;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,8 +18,9 @@ use App\Services;
 Route::get('/', function () {
 
     $services=Services::all();
+    $contact=Contact::find(1);
 
-    return view('index',compact('services'));
+    return view('index',compact('services','contact'));
 })->name('index');
 
 
@@ -27,3 +29,6 @@ Route::get('/admin', function () {
 })->name('admin');
 
 Route::resource('/admin/services','ServicesController');
+
+Route::post('/contact', 'ContactController@store')->name('contact.store');
+Route::get('/admin/contact', 'ContactController@index')->name('contact.index');

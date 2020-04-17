@@ -50,11 +50,6 @@
 
 <body>
 
-
-    <div id="preloader"></div>
-
-
-
 @yield('content')
 
 
