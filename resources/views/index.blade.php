@@ -6,6 +6,8 @@
 
     @include('templates.header')
 
+    @include('templates.nav')
+
     @include('templates.about')
 
     @include('templates.service')

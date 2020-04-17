@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Portfolio;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,8 +15,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
+    $portfolios = Portfolio::all();
+
+    return view('index', compact('portfolios'));
 });
+
+Route::resource('portfolio','PortfolioController');
 
 Route::get('/admin', function () {
     return view('admin.index');
