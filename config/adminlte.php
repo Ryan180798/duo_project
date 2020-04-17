@@ -217,6 +217,11 @@ return [
             'text'=>'Voir les messages',
             'url'=>'/admin/contact',
         ],
+
+        [
+            'text'=>'Section Subscribe',
+            'url'=>'/admin/subscribe',
+        ],
     ],
 
     /*

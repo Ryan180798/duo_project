@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Services;
 use App\Contact;
+use App\Subscribe;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,8 +20,9 @@ Route::get('/', function () {
 
     $services=Services::all();
     $contact=Contact::find(1);
+    $subscribe=Subscribe::find(1);
 
-    return view('index',compact('services','contact'));
+    return view('index',compact('services','contact','subscribe'));
 })->name('index');
 
 
@@ -32,3 +34,6 @@ Route::resource('/admin/services','ServicesController');
 
 Route::post('/contact', 'ContactController@store')->name('contact.store');
 Route::get('/admin/contact', 'ContactController@index')->name('contact.index');
+
+Route::get('/admin/subscribe', 'SubscribeController@edit')->name('subscribe');
+Route::post('/admin/subscribe/update','SubscribeController@update')->name('subscribe.update');
