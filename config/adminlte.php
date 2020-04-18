@@ -212,6 +212,11 @@ return [
             'text'=>'Portfolio',
             'url'=>'/portfolio',
         ],
+
+        [
+            'text'=>'Header',
+            'url'=>'/admin/header',
+        ],
     ],
 
     /*

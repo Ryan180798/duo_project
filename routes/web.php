@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Portfolio;
+use App\Header;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,12 +17,18 @@ use App\Portfolio;
 
 Route::get('/', function () {
     $portfolios = Portfolio::all();
+    $header = Header::all();
 
-    return view('index', compact('portfolios'));
-});
+    return view('index', compact('portfolios','header'));
+})->name('index');
 
-Route::resource('portfolio','PortfolioController');
 
 Route::get('/admin', function () {
     return view('admin.index');
 })->name('admin');
+
+Route::get('/admin/header', 'HeaderController@edit')->name('header');
+
+Route::post('/admin/header/update','HeaderController@update')->name('header.update');
+
+Route::resource('portfolio','PortfolioController');
