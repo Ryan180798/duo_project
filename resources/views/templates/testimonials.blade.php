@@ -12,9 +12,10 @@
       </div>
 
       @if (count($testimonials)!==0)
-      {{$i=0}}
+
       @foreach ($testimonials as $testimonial)
-      @if ($i%2==0)
+        
+      @if ($loop->index%2==0)
         <div class="row">
           <div class="col-md-3">
             <div class="profile">
@@ -29,12 +30,11 @@
             </div>
           </div>  
         </div>
-        {{++$i}}
        @else
         <div class="row">
           <div class="col-md-9">
             <div class="quote">
-              <b><img src="img/quote_sign_left.png" alt=""></b> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis architecto beatae. <small><img src="img/quote_sign_right.png" alt=""></small>
+              <b><img src="img/quote_sign_left.png" alt=""></b> {{$testimonial->temoignage}} <small><img src="img/quote_sign_right.png" alt=""></small>
             </div>
           </div>
           <div class="col-md-3">
@@ -45,7 +45,6 @@
             </div>
           </div>
         </div>
-        {{++$i}}
         @endif
         @endforeach
             

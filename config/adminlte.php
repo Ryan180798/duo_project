@@ -167,7 +167,7 @@ return [
 
     'use_route_url' => false,
 
-    'dashboard_url' => 'home',
+    'dashboard_url' => 'admin',
 
     'logout_url' => 'logout',
 
@@ -208,24 +208,31 @@ return [
     */
 
     'menu' => [
+
+
+        ['header'=>'Personnalisation du site'],
         [
             'text'=>'Section Services',
             'url'=>'/admin/services',
+            'icon'=>' fa fa-desktop',
         ],
-
-        [
-            'text'=>'Voir les messages',
-            'url'=>'/admin/contact',
-        ],
-
         [
             'text'=>'Section Subscribe',
             'url'=>'/admin/subscribe',
+            'icon'=>' fas fa-bell',
         ],
-
+        
         [
             'text'=>'Section Testimonials',
             'url'=>'/admin/testimonials',
+            'icon'=>' fas fa-quote-right',
+        ],
+
+        ['header'=>'Messages'],
+        [
+            'text'=>'Voir les messages',
+            'url'=>'/admin/contact',
+            'icon'=>' fas fa-inbox',
         ],
     ],
 
