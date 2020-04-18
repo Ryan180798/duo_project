@@ -222,6 +222,11 @@ return [
             'text'=>'Section Subscribe',
             'url'=>'/admin/subscribe',
         ],
+
+        [
+            'text'=>'Section Testimonials',
+            'url'=>'/admin/testimonials',
+        ],
     ],
 
     /*
