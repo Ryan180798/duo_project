@@ -212,9 +212,10 @@ return [
 
         ['header'=>'Personnalisation du site'],
         [
-<<<<<<< HEAD
+
             'text'=>'Portfolio',
             'url'=>'/portfolio',
+            'icon'=>'fas fa-folder-open'
         ],
 
         [
@@ -225,12 +226,15 @@ return [
         [
             'text'=>'About',
             'url'=>'/admin/about',
+            'icon'=>'fas fa-address-card'
         ],
 
         [
             'text'=>'Team',
             'url'=>'/team',
-=======
+            'icon'=>'fas fa-users'
+        ],
+        [
             'text'=>'Section Services',
             'url'=>'/admin/services',
             'icon'=>' fa fa-desktop',
@@ -252,7 +256,6 @@ return [
             'text'=>'Voir les messages',
             'url'=>'/admin/contact',
             'icon'=>' fas fa-inbox',
->>>>>>> 6ccd2e3b452d67d43c42bd11976326aea561cc2a
         ],
     ],
 

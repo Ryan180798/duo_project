@@ -49,7 +49,35 @@
                         </div>
                         <a href="/admin/testimonials" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                     </div>
-                </div>     
+                </div> 
+                <div class="col-lg-3 col-6">
+                  <!-- small box -->
+                  <div class="small-box bg-warning">
+                    <div class="inner">
+                      <h3>{{count($portfolios)}}</h3>
+      
+                      <p>Portfolios</p>
+                    </div>
+                    <div class="icon">
+                      <i class="fas fa-folder-open"></i>
+                    </div>
+                    <a href="/portfolio" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                  </div>
+                </div> 
+                <div class="col-lg-3 col-6">
+                  <!-- small box -->
+                  <div class="small-box bg-danger">
+                    <div class="inner">
+                      <h3>{{count($teams)}}</h3>
+      
+                      <p>Team's Members</p>
+                    </div>
+                    <div class="icon">
+                      <i class="fas fa-users"></i>
+                    </div>
+                    <a href="/team" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                  </div>
+                </div>   
             </div>
    </div>
 

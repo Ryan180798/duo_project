@@ -50,14 +50,7 @@
 
 <body>
 
-<<<<<<< HEAD
-
     
-
-
-
-=======
->>>>>>> 6ccd2e3b452d67d43c42bd11976326aea561cc2a
 @yield('content')
 
 

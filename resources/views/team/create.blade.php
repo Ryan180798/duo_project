@@ -1,10 +1,25 @@
-@extends('layout.app')
+@extends('adminlte::page')
 
 @section('content')
 
 
 <div class="container mt-5 pt-5">
     <h1 class="text-center mt-5 pt-5">Team</h1>
+    <div class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            <div class="col-sm-6">
+              <h1 class="m-0 text-dark">Dashboard</h1>
+            </div><!-- /.col -->
+            <div class="col-sm-6">
+              <ol class="breadcrumb float-sm-right">
+                <li class="breadcrumb-item"><a href="/admin">Home</a></li>
+                <li class="breadcrumb-item active">Add Team</li>
+              </ol>
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
 
 
     <form action="{{route('team.store')}}" method="POST" enctype="multipart/form-data">
