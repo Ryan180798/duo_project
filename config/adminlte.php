@@ -222,6 +222,11 @@ return [
             'text'=>'About',
             'url'=>'/admin/about',
         ],
+
+        [
+            'text'=>'Team',
+            'url'=>'/team',
+        ],
     ],
 
     /*
