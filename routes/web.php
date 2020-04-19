@@ -29,7 +29,9 @@ Route::get('/', function () {
 
 
 Route::get('/admin', function () {
-    return view('admin.index');
+    $contacts=Contact::all();
+    $testimonials=Testimonials::all();
+    return view('admin.index',compact('contacts','testimonials'));
 })->name('admin');
 
 Route::resource('/admin/services','ServicesController');
