@@ -217,6 +217,11 @@ return [
             'text'=>'Header',
             'url'=>'/admin/header',
         ],
+
+        [
+            'text'=>'About',
+            'url'=>'/admin/about',
+        ],
     ],
 
     /*

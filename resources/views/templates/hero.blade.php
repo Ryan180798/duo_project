@@ -4,7 +4,7 @@
 
   @if(!empty($header))
   
-    <section id="hero" style= "background-image: url({{asset('storage/'.$header[0]->img_path)}});">
+    <section id="hero" style= "background-image: url({{asset('storage/'.$header->img_path)}});">
     <div class="hero-container">
       <div class="wow fadeIn">
         <div class="hero-logo">
