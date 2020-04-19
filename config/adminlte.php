@@ -167,7 +167,7 @@ return [
 
     'use_route_url' => false,
 
-    'dashboard_url' => 'home',
+    'dashboard_url' => 'admin',
 
     'logout_url' => 'logout',
 
@@ -208,7 +208,11 @@ return [
     */
 
     'menu' => [
+
+
+        ['header'=>'Personnalisation du site'],
         [
+<<<<<<< HEAD
             'text'=>'Portfolio',
             'url'=>'/portfolio',
         ],
@@ -226,6 +230,29 @@ return [
         [
             'text'=>'Team',
             'url'=>'/team',
+=======
+            'text'=>'Section Services',
+            'url'=>'/admin/services',
+            'icon'=>' fa fa-desktop',
+        ],
+        [
+            'text'=>'Section Subscribe',
+            'url'=>'/admin/subscribe',
+            'icon'=>' fas fa-bell',
+        ],
+        
+        [
+            'text'=>'Section Testimonials',
+            'url'=>'/admin/testimonials',
+            'icon'=>' fas fa-quote-right',
+        ],
+
+        ['header'=>'Messages'],
+        [
+            'text'=>'Voir les messages',
+            'url'=>'/admin/contact',
+            'icon'=>' fas fa-inbox',
+>>>>>>> 6ccd2e3b452d67d43c42bd11976326aea561cc2a
         ],
     ],
 

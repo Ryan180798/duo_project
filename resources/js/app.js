@@ -15,4 +15,4 @@ require('magnific-popup');
 
 require('./custom');
 
-require('./contactform');
+// require('./contactform');
