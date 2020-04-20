@@ -209,36 +209,24 @@ return [
 
     'menu' => [
 
+        [
+            'text'=>'Retour sur le site',
+            'url'=>'/',
+        ],
 
         ['header'=>'Personnalisation du site'],
+        
         [
-
-            'text'=>'Portfolio',
-            'url'=>'/portfolio',
-            'icon'=>'fas fa-folder-open'
-        ],
-
-        [
-            'text'=>'Header',
+            'text'=>'Section Header',
             'url'=>'/admin/header',
         ],
-
+        
         [
-            'text'=>'About',
+            'text'=>'Section About',
             'url'=>'/admin/about',
             'icon'=>'fas fa-address-card'
         ],
-
-        [
-            'text'=>'Team',
-            'url'=>'/team',
-            'icon'=>'fas fa-users'
-        ],
-        [
-            'text'=>'Section Services',
-            'url'=>'/admin/services',
-            'icon'=>' fa fa-desktop',
-        ],
+        
         [
             'text'=>'Section Subscribe',
             'url'=>'/admin/subscribe',
@@ -246,10 +234,35 @@ return [
         ],
         
         [
+            'text'=>'Section Contact',
+            'url'=>'/admin/contact2',
+            'icon'=>'far fa-address-book',
+        ],
+        
+        
+        ['header'=>'CRUD'],
+        [
+            'text'=>'Section Team',
+            'url'=>'/team',
+            'icon'=>'fas fa-users'
+        ],
+        [
+
+            'text'=>'Section Portfolio',
+            'url'=>'/portfolio',
+            'icon'=>'fas fa-folder-open'
+        ],
+        [
+            'text'=>'Section Services',
+            'url'=>'/admin/services',
+            'icon'=>' fa fa-desktop',
+        ],
+        [
             'text'=>'Section Testimonials',
             'url'=>'/admin/testimonials',
             'icon'=>' fas fa-quote-right',
         ],
+
 
         ['header'=>'Messages'],
         [

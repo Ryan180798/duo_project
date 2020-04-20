@@ -18,8 +18,8 @@
 </div>
 
 
-<div class="container mt-5 pt-5">
-    <h1 class="text-center mt-5 pt-5">Ajout de la Team</h1>
+<div class="container">
+    <h1 class="text-center ">Ajout de la Team</h1>
     
     <form action="{{route('team.update', $team->id)}}" method="POST" enctype="multipart/form-data">
         @csrf

@@ -52,6 +52,13 @@
                         <td>{{$contact->email}}</td>
                         <td>{{$contact->subject}}</td>
                         <td>{{$contact->message}}</td>
+                        <td>
+                          <form action="{{route('contact.destroy',$contact->id)}}" method="post">
+                            @csrf
+                            @method('delete')
+                                <button class="btn btn-danger">Delete</button>
+                        </form>
+                        </td>
                     </tr>
                     @endforeach
                     </tbody>
