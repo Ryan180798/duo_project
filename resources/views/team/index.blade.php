@@ -40,7 +40,7 @@
             <tbody>
                 <td>{{$team->nom}}</td>
                 <td><img src="{{asset('storage/'.$team->img_path)}}"/></td>
-                <td>{{$team->description}}></td>
+                <td>{{$team->description}}</td>
                 <td>
                     <a href="{{route('team.edit',$team->id)}}">
                         <button class="btn btn-primary">Modifier</button>

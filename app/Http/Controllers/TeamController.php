@@ -85,10 +85,13 @@ class TeamController extends Controller
     {
         $team = Team::find($id);
 
-        Storage::delete($team->img_path);
+        if (!request('img') == null) {
+            Storage::delete($team->img_path);
+            $team->img_path = request('img')->store('img');
+          
+        }
 
         $team->nom = request('nom');
-        $team->img_path = request('img')->store('img');
         $team->description = request('description');
 
         $team->save();

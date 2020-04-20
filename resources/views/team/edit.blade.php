@@ -37,7 +37,7 @@
 
         <div class="form-group">
             <label for="description">description:</label>
-            <textarea type="text" name="description" id="description" class="form-control" cols="30" rows="10"  value="{{$team->description}}"></textarea>
+            <textarea type="text" name="description" id="description" class="form-control" cols="30" rows="10"  value="">{{$team->description}}</textarea>
         </div>
 
         <button type="submit" class="btn btn-primary d-block mx-auto">Ajouter</button>

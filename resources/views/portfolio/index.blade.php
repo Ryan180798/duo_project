@@ -39,12 +39,16 @@
             <tbody>
                 <td>{{$portfolio->nom}}</td>
                 <td><img src="{{'storage/'.$portfolio->img_path}}"/></td>
-                <td>{{$portfolio->description}}></td>
+                <td>{{$portfolio->description}}</td>
                 <td>
                     <a href="{{route('portfolio.edit',$portfolio->id)}}">
                         <button class="btn btn-primary">Modifier</button>
                         </a>
-                    <button class="btn btn-danger">Supprimer</button>
+                    <form action="{{route('portfolio.destroy',$portfolio->id)}}" method="post">
+                      @csrf
+                      @method('delete')
+                        <button class="btn btn-danger">Supprimer</button>
+                    </form>
                 </td>
         
         @endforeach

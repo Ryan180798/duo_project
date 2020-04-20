@@ -15,8 +15,8 @@
             </div>
           </div>
 
+          <div class="row">
           @foreach ($portfolios as $portfolio)
-        <div class="row">
           <div class="col-md-3">
             <a class="portfolio-item" style="background-image: url({{asset('storage/'.$portfolio->img_path)}});" href="">
               <div class="details">
@@ -26,9 +26,9 @@
             </a>
           </div>
 
-@endforeach
-
-
-      </div>
+          
+          
+          @endforeach
+        </div>
     </div>
   </section>
