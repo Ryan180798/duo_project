@@ -2,11 +2,16 @@
 
 @section('content')
 
+<div class="input-group custom-search-form">
+                <input type="text" class="form-control" name="search" placeholder="Search...">
+                <span class="input-group-btn">
+    <button class="btn btn-default-sm" type="submit">
+      <i class="fas fa-search"></i>
+    </button>
+</span>
+</div>
 
-@include('templates.nav')
-
-
-<div class="container ">
+<div class="container mt-5">
     <h1 class="text-center">Tous mes portfolios</h1>
     <div class="content-header">
         <div class="container-fluid">

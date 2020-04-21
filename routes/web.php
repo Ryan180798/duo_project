@@ -59,6 +59,12 @@ Route::post('/admin/about/update','AboutController@update')->name('about.update'
 
 Route::resource('portfolio','PortfolioController');
 
+Route :: get ('/', function () { 
+    return view ('welcome'); 
+}); 
+
+
+
 Route::resource('team','TeamController');
 
 Route::resource('/admin/services','ServicesController');
@@ -74,4 +80,5 @@ Route::resource('/admin/testimonials','TestimonialsController');
 
 Route::get('/admin/contact2', 'Contact2Controller@edit')->name('contact2');
 Route::post('/admin/contact2/update','Contact2Controller@update')->name('contact2.update');
+
 

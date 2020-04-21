@@ -269,7 +269,7 @@ return [
             'text'=>'Voir les messages',
             'url'=>'/admin/contact',
             'icon'=>' fas fa-inbox',
-        ],
+       ],
     ],
 
     /*
